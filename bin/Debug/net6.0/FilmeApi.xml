@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FilmeApi</name>
+    </assembly>
+    <members>
+        <member name="M:FilmesApi.Controllers.CinemaController.AdicionaCinema(FilmeApi.Data.Dtos.CreateCinemaDto)">
+            <summary>
+            Adiciona um cinema ao banco de dados
+            </summary>
+            <param name="cinemaDto">Objeto com os campos necessários para criação de um cinema</param>
+            <returns>IActionResult</returns>
+            <response code="201">Inserção bem-sucedida</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.CinemaController.RecuperaCinemas">
+            <summary>
+            Recupera todos os cinema no banco de dados
+            </summary>
+            <param name="cinemaDto">Objeto com os campos necessários para criação de um cinema</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso o returno seja feito com sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.CinemaController.RecuperaCinemasPorId(System.Int32)">
+            <summary>
+            Recupera um cinema pelo ID no banco de dados.
+            </summary>
+            <param name="id">ID do cinema a ser recuperado</param>
+            <returns>IActionResult</returns>
+            <response code="200">Recuperação bem-sucedida</response>
+            <response code="404">Cinema não encontrado</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.CinemaController.AtualizaCinema(System.Int32,FilmeApi.Data.Dtos.UpdateCinemaDto)">
+            <summary>
+            Atualiza um cinema no banco de dados pelo ID.
+            </summary>
+            <param name="id">ID do cinema a ser atualizado</param>
+            <param name="cinemaDto">Objeto com os campos a serem atualizados</param>
+            <returns>IActionResult</returns>
+            <response code="204">Atualização bem-sucedida</response>
+            <response code="404">Cinema não encontrado</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.CinemaController.DeletaCinema(System.Int32)">
+            <summary>
+            Exclui um cinema no banco de dados pelo ID.
+            </summary>
+            <param name="id">ID do cinema a ser excluído</param>
+            <returns>IActionResult</returns>
+            <response code="204">Exclusão bem-sucedida</response>
+            <response code="404">Cinema não encontrado</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.EnderecoController.AdicionaEndereco(FilmesApi.Data.Dtos.CreateEnderecoDto)">
+            <summary>
+            Adiciona um endereço ao banco de dados
+            </summary>
+            <param name="enderecoDto">Objeto com os campos necessários para criação de um Endereço</param>
+            <returns>IActionResult</returns>
+            <response code="201">Inserção bem-sucedida</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.EnderecoController.RecuperaEnderecos">
+            <summary>
+            Recupera todos os endereço no banco de dados
+            </summary>
+            <param name="enderecoDto">Objeto com os campos necessários para criação de um endereço</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso o returno seja feito com sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.EnderecoController.RecuperaEnderecosPorId(System.Int32)">
+            <summary>
+            Recupera um endereço pelo ID no banco de dados.
+            </summary>
+            <param name="id">ID do endereço a ser recuperado</param>
+            <returns>IActionResult</returns>
+            <response code="200">Recuperação bem-sucedida</response>
+            <response code="404">Endereço não encontrado</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.EnderecoController.AtualizaEndereco(System.Int32,FilmeApi.Data.Dtos.UpdateEnderecoDto)">
+            <summary>
+            Atualiza um endereço no banco de dados pelo ID.
+            </summary>
+            <param name="id">ID do endereço a ser atualizado</param>
+            <param name="enderecoDto">Objeto com os campos a serem atualizados</param>
+            <returns>IActionResult</returns>
+            <response code="204">Atualização bem-sucedida</response>
+            <response code="404">Endereço não encontrado</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.EnderecoController.DeletaEndereco(System.Int32)">
+            <summary>
+            Exclui um endereço no banco de dados pelo ID.
+            </summary>
+            <param name="id">ID do endereço vai ser excluído</param>
+            <returns>IActionResult</returns>
+            <response code="204">Exclusão bem-sucedida</response>
+            <response code="404">Endereço não encontrado</response>
+        </member>
+        <member name="M:FilmeApi.Controllers.FilmeController.AdicionaFilme(FilmeApi.Data.Dtos.CreateFilmeDto)">
+            <summary>
+            Adiciona um filme ao banco de dados
+            </summary>
+            <param name="filmeDto">Objeto com os campos necessários para criação de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="201">Inserção bem-sucedida</response>
+        </member>
+        <member name="M:FilmeApi.Controllers.FilmeController.RecuperaFilmes(System.Int32,System.Int32)">
+            <summary>
+            Recupera todos os filmes no banco de dados
+            </summary>
+            <param name="filmeDto">Objeto com os campos necessários para criação de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso o returno seja feito com sucesso</response>
+        </member>
+        <member name="M:FilmeApi.Controllers.FilmeController.VerificarFilmePorId(System.Int32)">
+            <summary>
+            Recupera um filme pelo ID no banco de dados.
+            </summary>
+            <param name="id">ID do filme a ser recuperado</param>
+            <returns>IActionResult</returns>
+            <response code="200">Recuperação bem-sucedida</response>
+            <response code="404">Filme não encontrado</response>
+        </member>
+        <member name="M:FilmeApi.Controllers.FilmeController.AtualizaFilme(System.Int32,FilmeApi.Data.Dtos.UpdateFilmeDto)">
+            <summary>
+            Atualiza um filme no banco de dados pelo ID.
+            </summary>
+            <param name="id">ID do filme a ser atualizado</param>
+            <param name="filmeDto">Objeto com os campos a serem atualizados</param>
+            <returns>IActionResult</returns>
+            <response code="204">Atualização bem-sucedida</response>
+            <response code="404">Filme não encontrado</response>
+        </member>
+        <member name="M:FilmeApi.Controllers.FilmeController.DeletarFilmes(System.Int32)">
+            <summary>
+            Exclui um filme no banco de dados pelo ID.
+            </summary>
+            <param name="id">ID do filme a ser excluído</param>
+            <returns>IActionResult</returns>
+            <response code="204">Exclusão bem-sucedida</response>
+            <response code="404">Filme não encontrado</response>
+        </member>
+        <member name="T:FilmeApi.Migrations.CriandoTabela">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmeApi.Migrations.CriandoTabela.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmeApi.Migrations.CriandoTabela.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmeApi.Migrations.CriandoTabela.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmeApi.Migrations.CinemaeEndereco">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmeApi.Migrations.CinemaeEndereco.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmeApi.Migrations.CinemaeEndereco.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmeApi.Migrations.CinemaeEndereco.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmeApi.Migrations.sessaoefilme">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmeApi.Migrations.sessaoefilme.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmeApi.Migrations.sessaoefilme.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmeApi.Migrations.sessaoefilme.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
